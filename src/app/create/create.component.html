@@ -1,10 +1,17 @@
 <div class="left">
-  <input type="text" placeholder="name" #name>
-  <input type="text" placeholder="url" #url>
-  <button (click)="addTutorial(name.value, url.value)">Add tutorial</button>
-
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Company (disabled)</mat-label>
-    <input matInput disabled value="Google">
+  <h3>Add a link</h3>
+  <section>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="My favourite website" #name>
   </mat-form-field>
+</section>
+<section>
+  <mat-form-field appearance="fill">
+    <mat-label>URL</mat-label>
+    <input matInput placeholder="https://example.com" #url>
+  </mat-form-field>
+</section>
+  <button (click)="addLink(name.value, url.value)" mat-raised-button color="primary">Add</button>
 </div>
+

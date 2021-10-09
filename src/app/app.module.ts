@@ -8,11 +8,12 @@ import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 
 import { NgxsModule } from '@ngxs/store';
-import { TutorialState } from './state/tutorial.state';
+import { LinkState } from './state/link.state';
 import { NgxsReduxDevtoolsPlugin } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 import { isDevMode } from '@angular/core';
 
@@ -26,9 +27,10 @@ import { isDevMode } from '@angular/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxsModule.forRoot([TutorialState], { developmentMode: isDevMode() }),
+    NgxsModule.forRoot([LinkState], { developmentMode: isDevMode() }),
     NgxsLoggerPluginModule.forRoot(),
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

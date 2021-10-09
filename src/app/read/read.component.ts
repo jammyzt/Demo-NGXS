@@ -1,9 +1,9 @@
 import { Component, NgModule, OnInit } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
-import { Tutorial } from '../models/tutorial.model';
-import { TutorialState } from '../state/tutorial.state';
+import { Link } from '../models/link.model';
+import { LinkState } from '../state/link.state';
 import { Observable } from 'rxjs';
-import { RemoveTutorial } from '../actions/tutorial.actions';
+import { RemoveLink } from '../actions/link.actions';
 
 @Component({
   selector: 'app-read',
@@ -13,14 +13,14 @@ import { RemoveTutorial } from '../actions/tutorial.actions';
 export class ReadComponent implements OnInit {
 
 //  tutorials$: Observable<Tutorial>
-  @Select(TutorialState.getTutorials) tutorials$ : any
+  @Select(LinkState.getLinks) links$ : any
 
   constructor(private store: Store) {
     //this.tutorials$ = this.store.select(state => state.tutorials.tutorials)
   }
 
-  delTutorial(name:string) :void {
-    this.store.dispatch(new RemoveTutorial(name))
+  delLink(id:number) :void {
+    this.store.dispatch(new RemoveLink(id))
   }
 
   ngOnInit(): void {
