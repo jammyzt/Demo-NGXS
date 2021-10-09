@@ -1,6 +1,15 @@
 # Ngxs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+A demo project to learn and demonstrate the use of NGXS within an Angular application.
+
+This application does nothing fancy other than help me get onboard with the NGXS world.
+
+After launching this app, you can add some URLs to the NGXS store, use the links and delete them.
+
+Check out the store folder to see everything that's involved. The "Create" and "Read" components will show you how the appicaiton intreacts with everything that's been set up!
+
+😎 Happy store-ing!
+
 
 ## Development server
 
