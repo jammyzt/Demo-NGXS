@@ -1,4 +1,4 @@
-# Ngxs
+# NGXS
 
 A demo project to learn and demonstrate the use of NGXS within an Angular application.
 
