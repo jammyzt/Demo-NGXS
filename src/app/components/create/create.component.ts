@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
-import { AddLink } from '../actions/link.actions';
+import { AddLink } from '../../store/actions/link.actions';
 
 @Component({
   selector: 'app-create',

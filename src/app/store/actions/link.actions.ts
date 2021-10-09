@@ -1,4 +1,4 @@
-import { Link } from "../models/link.model";
+import { Link } from "../../models/link.model";
 
 export class AddLink {
   static readonly type = '[LINK] Add'

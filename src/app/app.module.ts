@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReadComponent } from './read/read.component';
-import { CreateComponent } from './create/create.component';
+import { ReadComponent } from './components/read/read.component';
+import { CreateComponent } from './components/create/create.component';
 
 import { NgxsModule } from '@ngxs/store';
-import { LinkState } from './state/link.state';
+import { LinkState } from './store/state/link.state';
 import { NgxsReduxDevtoolsPlugin } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 

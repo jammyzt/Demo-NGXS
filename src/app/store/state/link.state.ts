@@ -1,5 +1,5 @@
 import { State, Action, StateContext, Selector } from "@ngxs/store";
-import { Link } from "../models/link.model";
+import { Link } from "../../models/link.model";
 import { AddLink, RemoveLink } from "../actions/link.actions";
 import { Injectable } from "@angular/core";
 

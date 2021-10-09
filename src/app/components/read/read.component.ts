@@ -1,9 +1,9 @@
 import { Component, NgModule, OnInit } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
-import { Link } from '../models/link.model';
-import { LinkState } from '../state/link.state';
+import { Link } from '../../models/link.model';
+import { LinkState } from '../../store/state/link.state';
 import { Observable } from 'rxjs';
-import { RemoveLink } from '../actions/link.actions';
+import { RemoveLink } from '../../store/actions/link.actions';
 
 @Component({
   selector: 'app-read',
